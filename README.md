@@ -92,8 +92,8 @@ Finally, the explorer.exe process should be restarted. In a clean way it would  
 -------------------------------
 SPECIAL THANKS
 -------------------------------
-Thank you very much for your arsenal of tools, NirSoft! Especially your product "AdvancedRun" comes in handy for me to ignore the UAC, which is somethat tricky. Another very, very useful feature is your GUI - as RunasMe not only use "AdvancedRun" of course, but also others that invoked or be invoked by it, I had to do a lot quotation mark escaping that gave me headache even with your app as 'debugger'. Maybe it would be helpful if you could add it to your website, because without quotation marks only one parameter without spaces would have been working.
-Anyway: As RunasMe's project code is much more comprehensive than only calling AdvancedRun.exe, I decided against naming them within my app as developer.
-Thanks you too, Uwe Sieber, for giving me an excellent alternative to psexec.exe with your RunAsSystem.exe which even works on Windows XP and has a much better reputation on VirusTotal than Sysinternals for years.
-Guillaume’s notifu.exe was a solid solution for me to include a nice customizable notification toast / pop-up balloon at the end oft he script. Inno Setup does not offer any code to do it by itself and is not compatible with known Lazarus routines. So, great work!
+- Thank you very much for your arsenal of tools, NirSoft! Especially your product "AdvancedRun" comes in handy for me to ignore the UAC, which is somethat tricky. Another very, very useful feature is your GUI - as RunasMe not only use "AdvancedRun" of course, but also others that invoked or be invoked by it, I had to do a lot quotation mark escaping that gave me headache even with your app as 'debugger'. Maybe it would be helpful if you could add it to your website, because without quotation marks only one parameter without spaces would have been working.
+- Anyway: As RunasMe's project code is much more comprehensive than only calling AdvancedRun.exe, I decided against naming them within my app as developer.
+- Thanks you too, Uwe Sieber, for giving me an excellent alternative to psexec.exe with your RunAsSystem.exe which even works on Windows XP and has a much better reputation on VirusTotal than Sysinternals for years.
+- Guillaume’s notifu.exe was a solid solution for me to include a nice customizable notification toast / pop-up balloon at the end oft he script. Inno Setup does not offer any code to do it by itself and is not compatible with known Lazarus routines. So, great work!
 <br>
