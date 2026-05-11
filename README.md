@@ -5,6 +5,7 @@ Disconnects SMB shares and mapped network drives without removal unless they are
 
 [<img src="https://user-images.githubusercontent.com/76787321/197257488-1b7aa8e9-9b6f-4600-949e-8ff477cb4bf4.png" width="23%"></img>](https://github.com/Dragodraki/NetworkDevicesLogOut/releases/latest/download/Network_devices_log-out)
 <br>
+<br>
 
 -------------------------------
 EXPLANATION
@@ -16,7 +17,8 @@ By connecting to another devices filesystem in Windows, the Windows/File Explore
 That's where my software comes in. The tool „Network devices log-out.exe“ combines several steps and is completely harmless to use, as long you don’t have open network file transfers open (local ones does not count), but a message prompt notices you about that anyway. In simple terms, it makes Windows forget about you successfully logged in to any SMB share. While it removes open shares (UNC paths) and deletes stored SMB credentials from the Windows vault (only domain-related, all other credentials like MS Teams or others will never be deleted), it does not remove mapped drive letters. The SMB paths are unconnected now, without doing a reboot. On the next windows logon you will see the 'error' message complaining about restoring network drives  not being posssible (yes, that is correct, because exactly that is what we wanted to achieve).
 
 After execution of „Network devices log-out.exe“ you can double click the drive again to enter the credentials again (better not permanent save it this time). It’s really recommended to use this tool again as soon you finished file transfer and don’t need the SMB share/drive be open anymore! Not because it has to but your remote devices (like another Windows client, server or NAS) remains much safer this way in general.
-<br><br>
+<br>
+<br>
 
 -------------------------------
 LICENSE (FREEWARE)
@@ -72,7 +74,7 @@ The OS I actually tested the software are labeled with "(verified)" at the end:
 - Windows Server 2025
 - ... probably next future Windows OS too
 <br>
-
+<br>
 
 -------------------------------
 HOW IT WORKS TECHNICALLY
@@ -82,7 +84,8 @@ At next all mapped drives are removed gracefully by command net use * /delete /y
 The service "LanmanWorkstation" should be restarted at this point (crucial if net use did not got applied due to open file transfers or open explorer.exe windows). Without it, we cannot be sure that the session is really terminated immediately. Therefore we just run the command with normal elevated rights. Why we did the previous step in the first place if we force termination anyway? - Because otherwise we would create so-called "ghost drives" which are remnants of earlier connections but cannot be deleted. They would need a account re-logon to disappear and I don't want that to happen.
 Now the registry information from the first step is being re-applied. It results in previous mapped drives will show again (but disconnected ths time) in Windows Explorer.
 Finally, the explorer.exe process should be restarted. In a clean way it would  mean, killing explorer.exe and restart the process again. But I am not fond of it since it could break any open file transfers mid-operation. Thats why I implemented my own refresh routine that has a success rate of approximately 80% by using Rexplorer.exe from Sordum and one of my own coded programs for that. If you still cannot see your previous mapping, you indeed have to kill and restart explorer.exe by yourself (but it would to aggressive to do this automatically for my taste).
-<br><br>
+<br>
+<br>
 
 -------------------------------
 SPECIAL THANKS
