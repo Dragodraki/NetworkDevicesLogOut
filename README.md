@@ -50,6 +50,8 @@ USAGE
 
 Important:
 If you cannot see your previous mapping, you indeed have to kill and restart explorer.exe yourself! It would to aggressive to put that into my script (cause it interferes with copying transfer windows), so I sticked to an attempt refreshing it without killing the process.
+<br>
+<br>
 
 -------------------------------
 WINDOWS SUPPORT
