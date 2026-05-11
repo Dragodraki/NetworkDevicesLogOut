@@ -3,7 +3,7 @@ Disconnects SMB shares and mapped network drives without removal unless they are
 It's the worlds first automated tool to remove even so-called "ghost drives" (unaccessible mapped drives in Windows Explorer). <br/>
 (Release Date: 12.05.2026, Publisher: Dragodraki alias Dreamland, Notice: no fork) <br/>
 
-[<img src="https://user-images.githubusercontent.com/76787321/197257488-1b7aa8e9-9b6f-4600-949e-8ff477cb4bf4.png" width="23%"></img>](https://github.com/Dragodraki/NetworkDevicesLogOut/releases/latest/download/Network_devices_log-out)
+[<img src="https://user-images.githubusercontent.com/76787321/197257488-1b7aa8e9-9b6f-4600-949e-8ff477cb4bf4.png" width="23%"></img>](https://github.com/Dragodraki/NetworkDevicesLogOut/releases/latest/download/Network.devices.log-out.exe)
 <br>
 <br>
 
